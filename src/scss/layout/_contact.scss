@@ -1,0 +1,64 @@
+.contact {
+    background-color: $artists-color;
+    color: $text-color;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    width: 100%;
+
+    &__title {
+        font-family: $title-font;
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    &__text {
+        font-family: $text-font;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        &--input {
+            width: 70vw;
+            padding: 0.7rem;
+            padding: 0.3rem;
+            border-radius: 0.7rem;
+            border: 1px solid $text-color;
+            background-color: $events-color;
+
+             &::placeholder {
+                color: $text-color;
+                font-size: 0.8rem;
+                font-family: $text-font
+
+             }
+        }
+
+        &--submit {
+            width: 30vw;
+            padding: 0.7rem;
+            padding: 0.3rem;
+            border-radius: 0.7rem;
+            border: 1px solid $text-color;
+            background-color: $search-color;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $header-footer-color;
+                border: 1px solid $text-color;
+
+            }
+
+        }
+
+    }
+}
