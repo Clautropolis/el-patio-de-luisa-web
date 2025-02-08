@@ -1,0 +1,34 @@
+.artist {
+    background-color: $artists-color;
+    color: $text-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 0.5rem;
+        @media (min-width: 768px) {
+            justify-content: flex-start;
+        }
+
+    &__title {
+            font-size: 2rem;
+            font-family: $title-font;
+            font-weight: bold;
+            padding-bottom: 0.4rem;
+        }
+    
+        &__desc {
+            font-size: 1rem;
+            font-family: $text-font;
+        }
+   
+
+    &__img {
+        width: 50vw;
+        border-radius: 0.7rem;
+        @media (min-width: 768px) {
+            width: 20vw;
+        }
+    }
+}

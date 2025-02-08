@@ -1,0 +1,24 @@
+@import "Variables";
+
+.search {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.2rem;
+    gap: 0.5rem;
+    background-color: $text-color;
+
+    &__input {
+        width: 95vw;
+        padding: 0.3rem;
+        border-radius: 0.7rem;
+        border: 1px solid $text-color;
+    }
+
+    &__icon {
+        font-size: 1rem;
+        color: $search-color;
+        padding: 0.3rem;
+    }
+}

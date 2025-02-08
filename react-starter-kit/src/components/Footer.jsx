@@ -1,11 +1,13 @@
-
+import '../styles/Footer.scss'
+import '../styles/Variables.scss'
+import logo from '../images/epdl-logo.jpg'
 
 function Footer() {
   return (
-    <>
+    <footer>
         <nav className="footer">
             <div className="footer__copyright">
-                <img src="/images/epdl-logo.jpg" alt="Es el logo de El Patio de Luisa" className="logo"/>
+                <img src={logo} alt="Es el logo de El Patio de Luisa" className="logo"/>
                 <p>© Copyright</p>
             </div>
             <ul className="footer__social-media">
@@ -20,8 +22,7 @@ function Footer() {
                 </li>
             </ul>
         </nav>
-
-    </>
+    </footer>
   )
 }
 

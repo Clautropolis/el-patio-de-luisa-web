@@ -1,0 +1,51 @@
+@import "Variables";
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $header-footer-color;
+    color: $text-color;
+    padding: 0.7rem;
+  }
+  
+  .header__nav {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .header__nav i {
+    font-size: 2rem;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .header__nav--menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    
+  
+  }
+  
+  .menu-item {
+    font-family: $title-font;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    &:hover {
+      background-color: $text-color;
+      color: $header-footer-color;
+      
+    }
+  }
+  
+  .logo {
+    width: 3.5rem;
+    border-radius: 50px;
+  }
+  

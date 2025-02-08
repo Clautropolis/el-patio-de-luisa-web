@@ -14,27 +14,25 @@ function App() {
 
   return (
       <>
-        <header>
-          <Header />
-        </header>
+        
+        <Header />
 
         <main>
 
           <Routes>
-
-          
-            <Home />
-            <Contact />
-            <Events />
-            <KnowUs />
-            <Detail />
+            <Route path="/" element={<Home />}/>
+            <Route path="/contact" element={<Contact />}/>
+            <Route path="/events" element={<Events />}/>
+            <Route path="/knowus" element={<KnowUs />}/>
+            <Route path="/artist/:artistId" element={<Detail />}/>
+            
           </Routes>
 
         </main>
 
-        <footer>
+        
           <Footer/>
-        </footer>
+       
       </>
     
   );
