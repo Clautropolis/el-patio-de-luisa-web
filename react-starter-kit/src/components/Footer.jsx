@@ -12,13 +12,13 @@ function Footer() {
             </div>
             <ul className="footer__social-media">
                 <li>
-                    <i className="fa-brands fa-instagram"></i>
+                    <i className="fa-brands fa-instagram icon"></i>
                 </li>
                 <li>
-                    <i className="fa-brands fa-youtube"></i>
+                    <i className="fa-brands fa-youtube icon"></i>
                 </li>
                 <li>
-                    <i className="fa-brands fa-tiktok"></i>
+                    <i className="fa-brands fa-tiktok icon"></i>
                 </li>
             </ul>
         </nav>

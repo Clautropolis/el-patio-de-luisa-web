@@ -1,14 +1,30 @@
-import EachArtist from "./EachArtist"
+import EachArtist from "./EachArtist";
+import PropTypes from "prop-types"
+import '../styles/ArtistsList.scss'
 
 
-function ArtistsList() {
+
+function ArtistsList({datajson}) {
+
+  if (datajson.length === 0) {
+    return <p className="not-found">No se encontraron resultados</p>
+  }
+
+  const artistsHtml = datajson.map((oneArtist) => (
+    <EachArtist key={oneArtist.id} infoArtist={oneArtist}/>
+  ))
+
   return (
     <>
         <section className="main-artistas">
-            <EachArtist />
+          {artistsHtml}
         </section>
     </>
   )
+}
+
+ArtistsList.propTypes={
+  datajson:PropTypes.array
 }
 
 export default ArtistsList
