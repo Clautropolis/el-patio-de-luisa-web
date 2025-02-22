@@ -6,7 +6,7 @@ function EachArtist({infoArtist}) {
 
   return (
     <article key={infoArtist.id} className="artist">
-      <Link className="artist-link artist">
+      <Link to={`/artist/${infoArtist.id}`} className="artist-link artist">
         <img src={infoArtist.image} alt={infoArtist.name} className="artist-image"/>
         <h3 className="artist-title">{infoArtist.name}</h3>
         <p className="artist-desc">{infoArtist.description}</p>

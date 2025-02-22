@@ -1,0 +1,55 @@
+@import "Variables";
+
+.detail {
+    color: $events-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+
+}
+
+.detail-title {
+    font-size: 2rem;
+    font-family: $title-font;
+    font-weight: bold;
+    text-align: center;
+    color: $search-color;
+    text-decoration: underline;
+}
+
+.detail-video {
+    width: 100%;
+    height: auto;
+    max-width: 100%; 
+    aspect-ratio: 16/9;
+    margin: 1rem 0;
+
+}
+
+.detail-desc {
+    font-size: 1rem;
+    font-family: $text-font;
+    padding: 0.5rem;
+}
+
+.back-button {
+    background-color: $header-footer-color;
+    color: $text-color;
+    padding: 0.8rem;
+    padding-left: 1rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $search-color;
+
+    }
+}

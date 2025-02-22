@@ -3,10 +3,10 @@ import Search from "./Search";
 import PropTypes from "prop-types"
 
 
-function Home({datajson}) {
+function Home({datajson, searchInput, setSearchInput, quitarAcentos}) {
   return (
     <>
-        <Search />
+        <Search searchInput={searchInput} setSearchInput={setSearchInput} quitarAcentos={quitarAcentos}/>
         <ArtistsList datajson={datajson}/>
     </>
   )
@@ -14,7 +14,10 @@ function Home({datajson}) {
 
 
 Home.propTypes={
-  datajson:PropTypes.array
+  datajson:PropTypes.array,
+  setSearchInput:PropTypes.func,
+  searchInput:PropTypes.string,
+  quitarAcentos:PropTypes.func
 }
 
 export default Home
